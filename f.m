@@ -1,0 +1,10 @@
+function y=f(t,x)
+%lambda=1.608790927*1e-4;
+% lambda=1.623531*1e-4;
+lambda=1.623532*1e-4;
+% lambda=0.76928*1e-2;
+% lambda=0.76929*1e-2;
+epsilon=0.01;
+y(1)=(1/epsilon)*(x(1)^2-x(2)^2+epsilon^2-x(1)^3+x(1)*epsilon^2);
+y(2)=x(1)-lambda+x(1)^2;
+y=y(:);
